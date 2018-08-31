@@ -25,6 +25,7 @@ namespace PythonUpload
             //BinaryReader oBinaryReaderFile2 = new BinaryReader(new FileStream(UpLoadFilePath_2, FileMode.Open, FileAccess.Read));
 
             //Test Modified
+            //Test Modified Second
             String PostData = String.Empty;
 
 
@@ -124,6 +125,16 @@ namespace PythonUpload
 
         }
 
+        /// <summary>
+        /// 获取随机的组装请求头部
+        /// </summary>
+        /// <param name="length"></param>
+        /// <param name="useNum"></param>
+        /// <param name="useLow"></param>
+        /// <param name="useUpp"></param>
+        /// <param name="useSpe"></param>
+        /// <param name="custom"></param>
+        /// <returns></returns>
         public static string GetRnd(int length, bool useNum, bool useLow, bool useUpp, bool useSpe, string custom)
         {
             byte[] b = new byte[4];
